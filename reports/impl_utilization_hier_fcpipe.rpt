@@ -1,0 +1,39 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Sep  2 19:47:07 2026
+| Host         : duyu running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file D:/Xilinx/zynq7020/cnn/reports/impl_utilization_hier_fcpipe.rpt
+| Design       : axis_cnn_mnist
+| Device       : 7z020clg400-2
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|      Instance      |            Module            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| axis_cnn_mnist     |                        (top) |      10451 |       6719 |    3732 |    0 | 3319 |      0 |      0 |        152 |
+|   (axis_cnn_mnist) |                        (top) |        646 |        646 |       0 |    0 |   25 |      0 |      0 |          0 |
+|   u_conv1          |                  conv1_layer |       1694 |       1490 |     204 |    0 | 1106 |      0 |      0 |          0 |
+|     u_conv1_buf    |                    conv1_buf |       1054 |        850 |     204 |    0 |  103 |      0 |      0 |          0 |
+|     u_conv1_calc   |                   conv1_calc |        647 |        647 |       0 |    0 | 1003 |      0 |      0 |          0 |
+|   u_conv2          |                  conv2_layer |       6846 |       3390 |    3456 |    0 |  733 |      0 |      0 |        144 |
+|     (u_conv2)      |                  conv2_layer |         63 |         63 |       0 |    0 |    0 |      0 |      0 |          0 |
+|     u_buf          |                    conv2_buf |       4440 |        984 |    3456 |    0 |   79 |      0 |      0 |          0 |
+|     u_calc         |                   conv2_calc |       2345 |       2345 |       0 |    0 |  654 |      0 |      0 |        144 |
+|   u_fc             |              fully_connected |        683 |        611 |      72 |    0 |  152 |      0 |      0 |          8 |
+|   u_pool1          |                 maxpool_relu |        249 |        249 |       0 |    0 |  670 |      0 |      0 |          0 |
+|   u_pool2          | maxpool_relu__parameterized0 |        346 |        346 |       0 |    0 |  633 |      0 |      0 |          0 |
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

@@ -1,0 +1,38 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Sep  2 19:32:28 2026
+| Host         : duyu running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file D:/Xilinx/zynq7020/cnn/reports/synth_utilization_hier_fixed.rpt
+| Design       : axis_cnn_mnist
+| Device       : 7z020clg400-2
+| Design State : Synthesized
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+|      Instance      |            Module            | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+| axis_cnn_mnist     |                        (top) |      10708 |       6976 |    3732 |    0 | 3273 |      0 |      0 |        152 |
+|   (axis_cnn_mnist) |                        (top) |        649 |        649 |       0 |    0 |   25 |      0 |      0 |          0 |
+|   u_conv1          |                  conv1_layer |       1731 |       1527 |     204 |    0 | 1106 |      0 |      0 |          0 |
+|     u_conv1_buf    |                    conv1_buf |       1090 |        886 |     204 |    0 |  103 |      0 |      0 |          0 |
+|     u_conv1_calc   |                   conv1_calc |        648 |        648 |       0 |    0 | 1003 |      0 |      0 |          0 |
+|   u_conv2          |                  conv2_layer |       7039 |       3583 |    3456 |    0 |  687 |      0 |      0 |        144 |
+|     (u_conv2)      |                  conv2_layer |         66 |         66 |       0 |    0 |    0 |      0 |      0 |          0 |
+|     u_buf          |                    conv2_buf |       4537 |       1081 |    3456 |    0 |   79 |      0 |      0 |          0 |
+|     u_calc         |                   conv2_calc |       2436 |       2436 |       0 |    0 |  608 |      0 |      0 |        144 |
+|   u_fc             |              fully_connected |        699 |        627 |      72 |    0 |  152 |      0 |      0 |          8 |
+|   u_pool1          |                 maxpool_relu |        254 |        254 |       0 |    0 |  670 |      0 |      0 |          0 |
+|   u_pool2          | maxpool_relu__parameterized0 |        348 |        348 |       0 |    0 |  633 |      0 |      0 |          0 |
++--------------------+------------------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+
