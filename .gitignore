@@ -1,0 +1,26 @@
+# ---- Vivado 生成文件(可由工程重新生成)----
+prj/vivado/cnn/cnn.sim/
+prj/vivado/cnn/cnn.runs/
+prj/vivado/cnn/cnn.cache/
+prj/vivado/cnn/cnn.hw/
+prj/vivado/cnn/cnn.ip_user_files/
+*.jou
+*.log
+*.str
+.Xil/
+
+# 仿真波形与输出
+*.wdb
+*.wcfg
+*.vcd
+
+# Vitis 生成目录(空的)
+prj/vitis/
+
+# 备份文件
+*.bak
+*~
+
+# 本机 AI 工具配置
+.claude/
+
