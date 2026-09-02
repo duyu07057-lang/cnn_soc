@@ -20,3 +20,6 @@ prj/vitis/
 # 备份文件
 *.bak
 *~
+
+# 本机 AI 工具配置
+.claude/
