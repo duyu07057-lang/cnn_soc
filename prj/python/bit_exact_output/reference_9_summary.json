@@ -1,0 +1,117 @@
+{
+  "model": "cnn_acc_3 bit-exact intended arithmetic",
+  "input": "D:\\Xilinx\\zynq7020\\cnn\\doc\\test_data\\9_0.txt",
+  "input_sha256": "74f4218c81d05d048185dd3ac1ada7f38c0f4158cee08ce8bd2620dd74f6190f",
+  "parameter_sha256": {
+    "conv1_weight_0.mem": "4ef4f37d0f655875ea75f1411e5228c4efa40ec3b1b23d580d05a4e01411c74e",
+    "conv1_weight_1.mem": "0d5c144d555a6ab7f1c416238b5d17586f1a304a4dd9afe77607f76fced1a120",
+    "conv1_weight_2.mem": "aa4f5d2b5fc23ad5c9066735baa53d7e035445ee4b82f5b19b30e34cd093f501",
+    "conv1_weight_3.mem": "0fb89c31c554be4b2eb357d1d1ea4fc2398b8ad4d573993a381e56d520f5120e",
+    "conv1_bias.mem": "bf8657e0abaac9f425a0ddc8a39690bae080be217ac89e9b9fd1af00cf3d4c32",
+    "conv2_weight_0.mem": "ab7c470d5e24e6fefbbf25cbbeb8b5f80f5b21d5974fe261cfd5cc7479dc7237",
+    "conv2_weight_1.mem": "a53d3d62971b32e4a93a65bc3d1cd60e073d8d6edead3edf02cdb2513c48d67f",
+    "conv2_weight_2.mem": "d034b2724ab3b5f9f0837e0acca9a6958c45120c9104ec7a0f65947bade026d7",
+    "conv2_weight_3.mem": "9e49075e2bf9e4b0d9f03aaec2c2017a34ad4bd4f60513871d47a8b5ea827002",
+    "conv2_weight_4.mem": "78d48858132c510a74563f7d427f7821fb294d45746952f6d2b829067bdff094",
+    "conv2_weight_5.mem": "3de833fbd739f32784fa043a8718f4751419378382654b4afb8488aa78c62b46",
+    "conv2_weight_6.mem": "a5c8c91893b9ef2cc699bcc66da9bd72217700f0a85ad97ee586abc9f4fd2611",
+    "conv2_weight_7.mem": "11fe214090a81b6e0b44bfa1e1e8675e493a68561fc9b919b6a9b26037a82a49",
+    "conv2_bias.mem": "01d4f9212d555814d1920d57ef06f7910f14cbcb7b0dde24911ad63f35eefe5d",
+    "fc_weight_wide.mem": "d5a47ab782e8c7a9cc8e828238f02c26907cbb276d9e1959d36716c4ed58c086",
+    "fc_bias_wide.mem": "cafc371912f99057c6f6acdb6379b9e5a5495fc0989ac4436294a81df61c3b6a"
+  },
+  "conv2_bias_mode": "signed8",
+  "shapes": {
+    "conv1": [
+      26,
+      26,
+      4
+    ],
+    "pool1": [
+      13,
+      13,
+      4
+    ],
+    "conv2": [
+      11,
+      11,
+      8
+    ],
+    "pool2": [
+      5,
+      5,
+      8
+    ],
+    "fc": [
+      10
+    ]
+  },
+  "statistics": {
+    "conv1": {
+      "entries": 2704,
+      "minimum": -313,
+      "maximum": 764,
+      "negative": 705,
+      "zero": 482,
+      "saturated_min": 0,
+      "saturated_max": 0
+    },
+    "pool1": {
+      "entries": 676,
+      "minimum": 0,
+      "maximum": 764,
+      "negative": 0,
+      "zero": 251,
+      "saturated_min": 0,
+      "saturated_max": 0
+    },
+    "conv2": {
+      "entries": 968,
+      "minimum": -1601,
+      "maximum": 1059,
+      "negative": 602,
+      "zero": 0,
+      "saturated_min": 0,
+      "saturated_max": 0
+    },
+    "pool2": {
+      "entries": 200,
+      "minimum": 0,
+      "maximum": 1059,
+      "negative": 0,
+      "zero": 96,
+      "saturated_min": 0,
+      "saturated_max": 0
+    },
+    "fc": {
+      "entries": 10,
+      "minimum": -1465,
+      "maximum": 1452,
+      "negative": 5,
+      "zero": 0,
+      "saturated_min": 0,
+      "saturated_max": 0
+    }
+  },
+  "logits": [
+    -663,
+    -484,
+    -71,
+    457,
+    496,
+    -94,
+    -1465,
+    442,
+    413,
+    1452
+  ],
+  "decision": 9,
+  "outputs": {
+    "conv1": "c1_9_bit_exact.mem",
+    "pool1": "p1_9_bit_exact.mem",
+    "conv2": "c2_9_bit_exact.mem",
+    "pool2": "p2_9_bit_exact.mem",
+    "fc": "fc_9_bit_exact.mem",
+    "decision": "decision_9.txt"
+  }
+}
