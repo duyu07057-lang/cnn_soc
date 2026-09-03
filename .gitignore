@@ -4,6 +4,11 @@ prj/vivado/cnn/cnn.runs/
 prj/vivado/cnn/cnn.cache/
 prj/vivado/cnn/cnn.hw/
 prj/vivado/cnn/cnn.ip_user_files/
+# Vivado 可再生输出；保留工程引用的顶层 wrapper
+prj/vivado/cnn/cnn.gen/**
+!prj/vivado/cnn/cnn.gen/**/
+!prj/vivado/cnn/cnn.gen/sources_1/bd/cnn_system/hdl/cnn_system_wrapper.v
+!prj/vivado/cnn/cnn.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
 *.jou
 *.log
 *.str
@@ -14,8 +19,25 @@ prj/vivado/cnn/cnn.ip_user_files/
 *.wcfg
 *.vcd
 
-# Vitis 生成目录(空的)
-prj/vitis/
+# Vitis：保留上板应用、平台描述和 XSA，忽略 IDE/BSP/编译输出
+prj/vitis/*
+!prj/vitis/cnn_system.xsa
+!prj/vitis/cnn_dma_polling/
+!prj/vitis/cnn_dma_polling_system/
+!prj/vitis/cnn_hello_world/
+!prj/vitis/cnn_hello_world_system/
+!prj/vitis/cnn_platform/
+prj/vitis/*/Debug/
+prj/vitis/*/Release/
+prj/vitis/*/_ide/
+prj/vitis/cnn_platform/*
+!prj/vitis/cnn_platform/.project
+!prj/vitis/cnn_platform/.cproject
+!prj/vitis/cnn_platform/platform.spr
+!prj/vitis/cnn_platform/platform.tcl
+!prj/vitis/cnn_platform/hw/
+prj/vitis/cnn_platform/hw/*
+!prj/vitis/cnn_platform/hw/cnn_system.xsa
 
 # 备份文件
 *.bak
