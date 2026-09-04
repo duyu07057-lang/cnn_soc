@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.63059",
-   "Default View_TopLeft":"-10,60",
+   "Default View_ScaleFactor":"0.424121",
+   "Default View_TopLeft":"0,-17",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -11,13 +11,13 @@ preplace inst axi_dma_0 -pg 1 -lvl 5 -x 1410 -y 400 -defaultsOSRD
 preplace inst axi_intc_0 -pg 1 -lvl 5 -x 1410 -y 190 -defaultsOSRD
 preplace inst axi_smc -pg 1 -lvl 6 -x 1760 -y 220 -defaultsOSRD
 preplace inst axi_smc_1 -pg 1 -lvl 6 -x 1760 -y 380 -defaultsOSRD
-preplace inst axis_cnn_mnist_0 -pg 1 -lvl 3 -x 740 -y 640 -defaultsOSRD
 preplace inst axis_data_fifo_0 -pg 1 -lvl 2 -x 490 -y 620 -defaultsOSRD
 preplace inst axis_data_fifo_1 -pg 1 -lvl 4 -x 1040 -y 660 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 7 -x 2150 -y 250 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -x 1040 -y 150 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 650 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1040 -y 370 -defaultsOSRD
+preplace inst axis_cnn_mnist_0 -pg 1 -lvl 3 -x 740 -y 640 -defaultsOSRD
 preplace netloc axi_dma_0_mm2s_introut 1 3 3 880 520 NJ 520 1590
 preplace netloc axi_dma_0_s2mm_introut 1 3 3 890 530 NJ 530 1580
 preplace netloc axi_intc_0_irq 1 5 2 1600 300 1900J
@@ -25,19 +25,19 @@ preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 20 750 370 710 610 730 860 
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 8 10 290 NJ 290 NJ 290 NJ 290 1190J 90 NJ 90 NJ 90 2400
 preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 360 700 620 720 870 300 1230 280 1620
 preplace netloc xlconcat_0_dout 1 4 1 1220 220n
+preplace netloc axi_smc_M00_AXI 1 6 1 N 220
+preplace netloc axis_data_fifo_0_M_AXIS 1 2 1 N 620
+preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 230
+preplace netloc ps7_0_axi_periph_M01_AXI 1 4 1 N 160
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 5 860 10 NJ 10 NJ 10 NJ 10 2390
+preplace netloc axi_smc_1_M00_AXI 1 6 1 1910 240n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1210 140n
 preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 5 360 540 NJ 540 NJ 540 NJ 540 1600
 preplace netloc axi_dma_0_M_AXI_MM2S 1 5 1 1580 200n
 preplace netloc axi_dma_0_M_AXI_S2MM 1 5 1 N 360
-preplace netloc axi_smc_1_M00_AXI 1 6 1 1910 240n
-preplace netloc axi_smc_M00_AXI 1 6 1 N 220
-preplace netloc axis_cnn_mnist_0_m_axis 1 3 1 N 640
-preplace netloc axis_data_fifo_0_M_AXIS 1 2 1 N 620
-preplace netloc axis_data_fifo_1_M_AXIS 1 4 1 1240 370n
 preplace netloc processing_system7_0_DDR 1 7 1 NJ 210
-preplace netloc processing_system7_0_FIXED_IO 1 7 1 NJ 230
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 5 860 10 NJ 10 NJ 10 NJ 10 2390
-preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1210 140n
-preplace netloc ps7_0_axi_periph_M01_AXI 1 4 1 N 160
+preplace netloc axis_data_fifo_1_M_AXIS 1 4 1 1240 370n
+preplace netloc axis_cnn_mnist_0_m_axis 1 3 1 N 640
 levelinfo -pg 1 -10 190 490 740 1040 1410 1760 2150 2420
 pagesize -pg 1 -db -bbox -sgen -10 0 2540 760
 "
